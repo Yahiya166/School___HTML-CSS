@@ -1,0 +1,102 @@
+.grid {
+  display: grid;
+  &-col90 {
+    grid-template: auto / 5fr 90fr 5fr;
+    .block__inner {
+      grid-column: 3/2;
+    }
+  }
+  &-col80 {
+    grid-template: auto / 10fr 80fr 10fr;
+    .block__inner {
+      grid-column: 3/2;
+    }
+  }
+}
+.block {
+  &__1x2 {
+    .left,
+    .right {
+      width: 50%;
+    }
+  }
+  &__1x3 {
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+  }
+}
+.padding-vertical {
+  padding: $vertical-padding;
+}
+.grid_2 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.grid_3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.grid_4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.grid_5 {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.flex_ {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.flex_center {
+  justify-content: center;
+}
+.flex_space {
+  justify-content: space-between;
+}
+.left__btn,
+.right__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 5rem;
+  height: 5rem;
+  background: $primary-color;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @include ease-in();
+  i {
+    color: #fff;
+  }
+}
+.left__btn {
+  left: 2rem;
+  @include ease-in();
+  &:hover {
+    background: $secondary-color;
+    img {
+      filter: brightness(100);
+    }
+  }
+  img {
+    left: 0.2rem;
+  }
+}
+.right__btn {
+  right: 2rem;
+  @include ease-in();
+  &:hover {
+    background: $secondary-color;
+    img {
+      filter: brightness(100);
+    }
+  }
+  img {
+    right: 0.2rem;
+  }
+}

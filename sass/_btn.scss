@@ -1,0 +1,28 @@
+.btn {
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    width: fit-content;
+    color: #fff;
+    background: $primary-color;
+    border-radius: 0.4rem;
+    gap: 0;
+    @include ease-in();
+    span{
+        width: max-content;
+        @include ease-in();
+        
+    }
+    i {
+        margin-left: 1rem;
+        color: $secondary-color;
+    }
+    &:hover {
+        background: $secondary-color;
+       span {
+        color: #fff;
+       }
+        i {
+            color: #fff;
+        }
+    }
+}

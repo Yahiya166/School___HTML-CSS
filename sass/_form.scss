@@ -1,0 +1,208 @@
+button {
+    background: transparent;
+    outline: #ffffff00;
+    border: #ffffff00;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.map {
+    iframe{
+        width: 100%;
+        height: 30rem;
+        vertical-align: bottom;
+    }
+}
+.contacts {
+    gap: 6rem;
+    margin: 3rem 0;
+    h3 {
+        position: relative;
+        width: fit-content;
+        font-size: 2.4rem;
+        color: $secondary-color;
+        span {
+            color: $primary-color;
+        }
+    }
+    .right_ {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+        p {
+            margin: 1rem auto;
+        }
+        h4 {
+            position: relative;
+            width: fit-content;
+            font-size: 2rem;
+            margin: 0;
+            color: $secondary-color;
+            span {
+                color: $primary-color;
+            }
+        }
+        i {
+            font-size: 2rem;
+            color: $primary-color;
+        }
+        ul {
+            list-style: none !important;
+            padding: 0 !important;
+            li {
+                a {
+                    color: $primary-color;
+                    margin-left: 1rem;
+                    @include ease-in(.3s);
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+    .submit_form {
+        display: flex;
+        justify-content: flex-end;
+        margin: 2rem auto;
+    }
+}
+
+input:focus,
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.col8_box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.col8_box label,
+.col8_box_ label {
+    position: relative;
+    color: $primary-color;
+    font-size: 1.6rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.col8_box input,
+.col8_box select {
+    position: relative;
+    color: #000;
+    font-size: 1.6rem;
+    width: 100%;
+    height: 3.5rem;
+    padding-left: 1rem;
+    border: none;
+}
+
+.col8_box_ {
+    position: relative;
+    width: 100%;
+}
+
+.col8_box_ textarea {
+    position: relative;
+    color: #000;
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100px;
+    padding-left: 1rem;
+    border: none;
+    vertical-align: bottom;
+}
+
+.right_form_ .btn_ {
+    vertical-align: middle;
+    width: 430.1px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.right_form_ button {
+    background: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+    color: #fff;
+    font-size: 1.8rem;
+    transition: .3s ease-in-out;
+    letter-spacing: .1rem;
+    z-index: 9;
+}
+
+.input_ {
+    position: relative;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+}
+
+.effect-8 {
+    border: 1px solid #ccc;
+    padding: 7px 14px 9px;
+    transition: 0.4s;
+}
+
+.effect-8~.focus-border:before,
+.effect-8~.focus-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $secondary-color;
+    transition: 0.3s;
+}
+
+.effect-8~.focus-border:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+}
+
+.effect-8~.focus-border i:before,
+.effect-8~.focus-border i:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: $secondary-color;
+    transition: 0.4s;
+}
+
+.effect-8~.focus-border i:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
+
+.effect-8:focus~.focus-border:before,
+.effect-8:focus~.focus-border:after {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.effect-8:focus~.focus-border i:before,
+.effect-8:focus~.focus-border i:after {
+    height: 100%;
+    transition: 0.4s;
+}
+
+.right_r {
+    li {
+        margin-bottom: .5rem;
+        span {
+            min-width: 10rem;
+        }
+    }
+}

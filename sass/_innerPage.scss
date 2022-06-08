@@ -1,0 +1,124 @@
+.inner_page {
+    .banner__slide {
+        img {
+            width: 100%;
+        }
+        &--text {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            transform: translateY(-50%);
+            padding: 0;
+            top: 50%;
+            text-align: center;
+            h1 {
+                font-size: 5rem;
+                color: #fff;
+            }
+        }
+    }
+    
+    .page_nav {
+        padding: 1rem 0;
+        margin: 0 auto;
+        display: block;
+        background: $secondary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            li {
+                position: relative;
+                a {
+                    position: relative;
+                    color: #fff;
+                }
+                &+li a:before {
+                    content: '';
+                    position: absolute;
+                    left: -2.6rem;
+                    top: 50%;
+                    width: .8rem;
+                    height: .8rem;
+                    transform: rotate(45deg) translateY(-50%);
+                    border: 0.1rem solid #fff;
+                    border-bottom: 0;
+                    border-left: 0;
+                }
+                &.active::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    bottom: 0;
+                    transform: translateY(3px);
+                    border-bottom: 0.1rem solid $primary-color;
+                }
+            }
+        }
+    }
+    .inner_heading {
+        margin: 3rem 0 2rem;
+        h2 {
+            position: relative;
+            width: fit-content;
+            font-size: 3rem;
+            color: $primary-color;
+        }
+    }
+    .inner_main_ {
+        margin-bottom: 5rem;
+    }
+    .management {
+        align-items: flex-start;
+        gap: 8rem;
+        margin-bottom: 5rem;
+        &__img {
+            width: 16rem;
+            img {
+                width: 100%;
+            }
+        }
+        &__txt  {
+            h3 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: $primary-color;
+            }
+        }
+    }
+    .financial {
+        .financial_box{
+        background: $primary-color;
+        border-radius: .4rem;
+        a {
+            padding: 1rem 2rem;
+        }
+        i,span {
+            font-size: 2rem;
+            color: #fff;
+        }
+        }
+    }
+    .gallery {
+        .card{
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .inner_page .banner__slide--text h1 {
+        font-size: 4rem;
+    }
+}

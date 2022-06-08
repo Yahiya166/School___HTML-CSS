@@ -1,0 +1,137 @@
+@media screen and (max-width: 978px) {
+  html {
+    font-size: 62.5%;
+  }
+  .main_mmenu {
+    display: block;
+  }
+  .header__top--name,
+  .header__bottom,
+  .banner__slide--text p,
+  .swiper-pagination,
+  .footer_top {
+    display: none;
+  }
+  .header__top--sideLinks {
+    .list,
+    .foote {
+      display: none;
+    }
+  }
+  .newsAlert .standard,
+  .newsAlert .standard .right .footer_mid .block__inner,
+  .left_,
+  .footer_mid .block__inner,
+  .footerBottom .block__inner,
+  .newsAlert .standard .right {
+    flex-direction: column;
+  }
+  .newsAlert .standard .right p {
+    width: 100%;
+  }
+  .grid_2,
+  .news {
+    grid-template-columns: 1fr;
+  }
+  .grid_3,
+  .grid_4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer_mid .left {
+    width: 60%;
+    text-align: center;
+  }
+  .footer_mid .left .social_icon {
+    margin: 2rem auto 0;
+    justify-content: center;
+  }
+  .footer_mid .right {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .footer_mid .right .cont {
+    margin: 1rem auto;
+    justify-content: center;
+  }
+  .footer {
+    padding-top: 2rem;
+  }
+  .newsAlert .standard .left {
+    margin-right: auto;
+    width: 100%;
+  }
+  .newsAlert .standard .right {
+    gap: 0;
+  }
+  .newsAlert .standard .right .btn {
+    margin-left: auto;
+    margin-bottom: 2rem;
+  }
+  .newsAlert .standard {
+    border: 1px solid #fff;
+  }
+  .grid_5  {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__top--logo .logo {
+    width: 14.9rem;
+  }
+  .header__top--logo .flag {
+    width: 23.6rem;
+    height: 12.4rem;
+  }
+  .banner__slide--text {
+    width: 90%;
+  }
+  .mainContent {
+    display: block;
+  }
+  .grid_3,
+  .grid_4 {
+    grid-template-columns: 1fr;
+  }
+  .cent {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .heading1 {
+    font-size: 2.6rem;
+  }
+
+  .mainContent .block__inner {
+    padding: 0 1rem;
+  }
+  .footerBottom a {
+    text-align: center;
+  }
+  .banner_left--btn,
+  .banner_right--btn {
+    display: none;
+  }
+  .banner__slide--text h1 {
+    font-size: 5vw;
+}
+.banner .mystyle2 {
+  margin-right: 1rem;
+}
+.banner1 .right .crocodile {
+  bottom: -6%;
+}
+.grid_5  {
+  grid-template-columns: repeat(2,1fr);
+}
+}
+@media screen and (max-width: 420px) {
+  .footer_mid .right .cont {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__top--logo .flag {
+    display: none;
+  }
+  .grid_5  {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
